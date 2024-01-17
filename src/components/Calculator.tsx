@@ -55,17 +55,21 @@ export default function Calculator() {
     const getResult = () => {
         const replaceOper = calc.replace(/÷/gi, "/").replace(/×/gi, "*");
 
-        const calcResult = eval(replaceOper)
-
-        // 만약 calcResult가 소수점 두 자리 이상이라면
-        if (/^\d+\.\d{2,}$/.test(calcResult.toString())) {
-            const calcResultToNum = parseFloat(calcResult).toFixed(2)
-            setCalc(calcResultToNum.toString())
-        } else {
-            setCalc(calcResult)
+        try {
+            const calcResult = new Function('return ' + replaceOper)();
+            
+            if (/^\d+\.\d{2,}$/.test(calcResult.toString())) {
+                const calcResultToNum = parseFloat(calcResult).toFixed(2);
+                setCalc(calcResultToNum.toString());
+            } else {
+                setCalc(calcResult.toString());
+            }
+    
+            return calcResult;
+        } catch (error) {
+            // 여기서 잠재적인 오류를 처리합니다.
+            console.error('계산 중 오류 발생:', error);
         }
-        
-        return calc
     }
 
     const formattedNumberWithCommas = (result: string) => {
