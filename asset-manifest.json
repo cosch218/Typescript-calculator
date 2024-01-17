@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/2023_typescript_calculator/static/css/main.5973d5e2.css",
-    "main.js": "/2023_typescript_calculator/static/js/main.b56e8754.js",
-    "static/js/787.6e3ad943.chunk.js": "/2023_typescript_calculator/static/js/787.6e3ad943.chunk.js",
-    "index.html": "/2023_typescript_calculator/index.html",
-    "main.5973d5e2.css.map": "/2023_typescript_calculator/static/css/main.5973d5e2.css.map",
-    "main.b56e8754.js.map": "/2023_typescript_calculator/static/js/main.b56e8754.js.map",
-    "787.6e3ad943.chunk.js.map": "/2023_typescript_calculator/static/js/787.6e3ad943.chunk.js.map"
+    "main.css": "/Typescript-calculator/static/css/main.5973d5e2.css",
+    "main.js": "/Typescript-calculator/static/js/main.8cc30088.js",
+    "static/js/787.6e3ad943.chunk.js": "/Typescript-calculator/static/js/787.6e3ad943.chunk.js",
+    "index.html": "/Typescript-calculator/index.html",
+    "main.5973d5e2.css.map": "/Typescript-calculator/static/css/main.5973d5e2.css.map",
+    "main.8cc30088.js.map": "/Typescript-calculator/static/js/main.8cc30088.js.map",
+    "787.6e3ad943.chunk.js.map": "/Typescript-calculator/static/js/787.6e3ad943.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5973d5e2.css",
-    "static/js/main.b56e8754.js"
+    "static/js/main.8cc30088.js"
   ]
 }
